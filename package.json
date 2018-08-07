@@ -1,6 +1,6 @@
 {
   "name": "digital-neuro-evo",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Discrete, binary neuro evolutionary algorithm originally created for thoughtnet",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -15,8 +15,7 @@
     "test": "jest --config jest.config.js --no-cache",
     "prepublishOnly": "yarn build"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.2.0",
