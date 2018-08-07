@@ -10,6 +10,18 @@ neuro-evo algorithm is the simplicity.
 
 You can see a visualization of this algorithm running [here](https://brysgo.github.io/thoughtnet).
 
+## Usage
+
+Start by installing the module.
+
+`npm install --save digital-neuro-evo`
+
+or
+
+`yarn add digital-neuro-evo`
+
+Then follow along with [this test](https://github.com/brysgo/digital-neuro-evo/blob/master/src/index.test.js).
+
 [build-badge]: https://circleci.com/gh/brysgo/digital-neuro-evo.svg?style=shield
 [build]: https://circleci.com/gh/brysgo/digital-neuro-evo
 
