@@ -1,7 +1,7 @@
 {
   "name": "digital-neuro-evo",
   "version": "1.0.0",
-  "description": "Describe digital-neuro-evo here",
+  "description": "Discrete, binary neuro evolutionary algorithm originally created for thoughtnet",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -12,18 +12,27 @@
   "scripts": {
     "build": "nwb build-web-module",
     "clean": "nwb clean-module",
-    "prepublishOnly": "npm run build",
-    "test": "nwb test",
-    "test:coverage": "nwb test --coverage",
-    "test:watch": "nwb test --server"
+    "test": "jest --config jest.config.js --no-cache",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^23.2.0",
     "nwb": "0.23.x"
   },
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": ""
+  "repository": "",
+  "resolutions": {
+    "nwb/karma": "npm:noop",
+    "nwb/karma-mocha-reporter": "npm:noop",
+    "nwb/karma-phantomjs-launcher": "npm:noop",
+    "nwb/babel-plugin-inferno": "npm:noop"
+  }
 }

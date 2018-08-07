@@ -1,1 +1,6 @@
-export default 'Welcome to digital-neuro-evo'
+
+export default {
+  Network: require('./network').default,
+  Source: require('./source').default,
+  Target: require('./target').default
+}

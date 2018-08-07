@@ -1,16 +1,21 @@
 # digital-neuro-evo
 
-[![Travis][build-badge]][build]
+[![CircleCI][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
 
-Describe digital-neuro-evo here.
+Originally created to serve thoughtnet, this is a digital neuro evolution
+algorithm I came up with. The most notable difference from your standard
+neuro-evo algorithm is the simplicity.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+You can see a visualization of this algorithm running [here](https://brysgo.github.io/thoughtnet).
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+[build-badge]: https://circleci.com/gh/brysgo/digital-neuro-evo.svg?style=flat-square
+[build]: https://circleci.com/gh/brysgo/digital-neuro-evo
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[npm-badge]: https://img.shields.io/npm/v/digital-neuro-evo.png?style=flat-square
+[npm]: https://www.npmjs.org/package/digital-neuro-evo
+
+
+[greenkeeper-badge]: https://badges.greenkeeper.io/brysgo/digital-neuro-evo.svg
+[greenkeeper]: https://greenkeeper.io/
