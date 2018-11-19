@@ -21,7 +21,7 @@
     "babel-jest": "^23.2.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "csv-parse": "^2.5.0",
+    "csv-parse": "^3.0.0",
     "jest": "^23.2.0",
     "nwb": "0.23.x"
   },
