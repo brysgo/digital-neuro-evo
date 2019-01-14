@@ -15,7 +15,9 @@
     "test": "jest --config jest.config.js --no-cache",
     "prepublishOnly": "yarn build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^3.3.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.2.0",
