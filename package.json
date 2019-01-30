@@ -1,6 +1,6 @@
 {
   "name": "digital-neuro-evo",
-  "version": "0.0.2",
+  "version": "0.0.0-semantic-release",
   "description": "Discrete, binary neuro evolutionary algorithm originally created for thoughtnet",
   "main": "lib/index.js",
   "module": "es/index.js",
