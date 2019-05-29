@@ -1986,9 +1986,10 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-csv-parse@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.0.1.tgz#4ad438352cbf12d5317d0fb9d588e53473293851"
+csv-parse@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/csv-parse/-/csv-parse-4.4.2.tgz#981ef1b8bd4094163e1533b06def83c01db8eb8e"
+  integrity sha512-lVx1OmDwsHckpjda9jWdlMO+hxnsAgfrQrxBdKhhtT5Jbku89Mfg5zGmaLJW2wWWKaEf7fXxLRdNYUE5HSQMAw==
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
