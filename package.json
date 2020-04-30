@@ -16,7 +16,7 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "uuid": "^3.3.2"
+    "uuid": "^8.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
