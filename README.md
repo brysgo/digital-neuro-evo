@@ -1,8 +1,8 @@
 # digital-neuro-evo
 
-[![CircleCI][build-badge]][build]
+![CI](https://github.com/brysgo/digital-neuro-evo/workflows/CI/badge.svg)
 [![npm package][npm-badge]][npm]
-[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
+![Update](https://github.com/brysgo/digital-neuro-evo/workflows/Update/badge.svg)
 
 Originally created to serve thoughtnet, this is a digital neuro evolution
 algorithm I came up with. The most notable difference from your standard
