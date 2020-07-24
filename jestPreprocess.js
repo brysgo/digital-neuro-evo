@@ -1,15 +1,6 @@
 const babelOptions = {
-  presets: ["env", "react"],
-  plugins: [
-    [
-      "transform-runtime",
-      {
-        helpers: false,
-        polyfill: false,
-        regenerator: true
-      }
-    ]
-  ]
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+  plugins: ["@babel/plugin-transform-runtime"],
 };
 
 module.exports = require("babel-jest").createTransformer(babelOptions);

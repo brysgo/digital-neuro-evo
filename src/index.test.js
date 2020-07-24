@@ -3,7 +3,7 @@ import { prepareDataForTraining } from "./utils/training";
 
 const csvParse = require("csv-parse");
 
-test("running the algorithm on benchmark data", () => {
+test("running the algorithm on benchmark data", (done) => {
   // new network to train
   const network = new Network();
 
@@ -15,7 +15,7 @@ test("running the algorithm on benchmark data", () => {
   var input = require("./data/iris.data");
 
   // parse CSV data using csv-parse lib
-  csvParse(input, { comment: "#" }, function(err, unshuffled) {
+  csvParse(input, { comment: "#" }, function (err, unshuffled) {
     // prepare the data by:
     // 1. splitting training and test data
     // 2. repeating the training data for each iteration
@@ -27,11 +27,11 @@ test("running the algorithm on benchmark data", () => {
     );
 
     // all IO data for thoughtnet is represented with binary
-    const sourceDataToBinary = datumArray => {
+    const sourceDataToBinary = (datumArray) => {
       return datumArray
         .slice(0, -1)
-        .map(x => {
-          let [left, right] = x.split(".").map(s => parseInt(s));
+        .map((x) => {
+          let [left, right] = x.split(".").map((s) => parseInt(s));
           var n = (left >>> 0).toString(2);
           n = "0000".substr(n.length) + n;
           var k = (right >>> 0).toString(2);
@@ -44,11 +44,11 @@ test("running the algorithm on benchmark data", () => {
     const binaryClassificationMap = {
       "Iris-setosa": "00",
       "Iris-versicolor": "01",
-      "Iris-virginica": "10"
+      "Iris-virginica": "10",
     };
 
     // source and target data are initialized with a generator and the size of each datum
-    const source = new Source(function*() {
+    const source = new Source(function* () {
       for (const datum of training) {
         yield sourceDataToBinary(datum);
       }
@@ -57,7 +57,7 @@ test("running the algorithm on benchmark data", () => {
       }
     }, 32);
 
-    const target = new Target(function*() {
+    const target = new Target(function* () {
       for (let i = 0; i < training.length; i++) {
         if (training[i].length > 1) {
           yield binaryClassificationMap[training[i][training[i].length - 1]];
@@ -91,12 +91,11 @@ test("running the algorithm on benchmark data", () => {
     }, 0);
 
     console.log(
-      `${correct} correct out of ${
-        testData.length
-      } test samples, ${numTrainingSamples} training samples, and ${trainingIterations} iterations.`
+      `${correct} correct out of ${testData.length} test samples, ${numTrainingSamples} training samples, and ${trainingIterations} iterations.`
     );
 
     // fail the test if we got less than half correct
     expect(correct).toBeGreaterThan(38);
+    done();
   });
 });

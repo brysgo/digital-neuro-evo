@@ -16,16 +16,21 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "uuid": "^3.3.2"
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "karma": "npm:noop",
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-jest": "^23.2.0",
+    "babel-jest": "^26.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "csv-parse": "^4.0.1",
-    "jest": "^23.2.0",
-    "nwb": "0.23.x"
+    "csv-parse": "^4.11.1",
+    "jest": "^26.1.0",
+    "nwb": "0.25.2"
   },
   "author": "",
   "homepage": "",
